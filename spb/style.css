@@ -1,0 +1,597 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f1f2;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+}
+
+h6, h5, h4, h3, h2, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+/*  Container
+______________________*/
+.container {
+  width: 100%;
+  max-width: 73.125em;
+  margin: 0 auto;
+}
+.main{
+  padding:5rem 0;
+}
+
+/*  Buttons
+______________________*/
+.btn{
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color:#191925;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    background-color: transparent;
+
+
+}
+.btn:hover{
+    -webkit-box-shadow: 0 0 3pt 2pt darkblue;
+            box-shadow: 0 0 3pt 2pt darkblue;
+}
+.btn__review{
+    border-color:#67bc6d;
+    font-weight: 600;
+    padding:0.7rem 1.6rem;
+}
+.btn__review span{
+   font-weight: 700;
+}
+.btn__overview{
+    border-color:#dadada;
+    padding:0.7rem  1.6rem;
+}
+.btn__link{
+    border:none;
+    background-color: #e2455a;
+    color:#fff;
+    padding:0.9rem  2rem;
+
+}
+.btn__showmore{
+    font-family: Gotham Pro;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    color: #191925;
+    margin:0 auto;
+    border: 1px solid #DADADA;
+    -webkit-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+            transform: skew(-20deg);
+    border-radius: 5px;
+    padding:1.4rem 2rem;
+    outline: none;
+    cursor: pointer;
+    background:transparent;
+    margin-top:8px;
+   
+}
+.btn__showmore:hover{
+     -webkit-box-shadow: 0 0 3pt 2pt darkblue;
+             box-shadow: 0 0 3pt 2pt darkblue;
+}
+.btn__showmore span{
+     display: block;
+     -webkit-transform: skew(20deg);
+         -ms-transform: skew(20deg);
+             transform: skew(20deg);
+}
+
+/*  Title
+______________________*/
+.section__title{
+     font-family: 'Gotham Pro';
+     font-weight: 700;
+     font-size: 2rem;
+     line-height: 2.5rem;
+     text-transform: uppercase;
+     color: #000000;
+     padding-left:0.8rem;
+}
+/*  Bets
+______________________*/
+.bets{
+    padding-bottom:8.5rem;
+}
+.bets__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top:2.4rem;
+    counter-reset: myCounter;
+
+}
+.bets__list--item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    padding: 1.8rem 3rem 1.7rem;
+    border-radius: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom:1.6rem;
+    min-height: 71px;
+
+   
+}
+
+.bets__list--item:before {
+  counter-increment: myCounter;
+  content:"0" counter(myCounter) ".";
+  color: #3E3B4A;
+  font-size: 1.4rem;
+  display: block;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin:0  3.8rem 0 0.8rem;
+  width:20px;
+
+}
+.bets__list--item:last-child:before{
+    content:counter(myCounter) ".";
+}
+
+.bets__logo,
+.bets__rating,
+.bets__gift,
+.bets__buttons,
+.bets__info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    white-space:nowrap;
+}
+.bets__info{
+     width: 51rem;
+     margin-right:auto;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
+     
+}
+.bets__logo{
+    width:22rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.bets__name{
+    text-align: left;
+    min-width: 9.5rem;
+    padding-left:0.7rem;
+    letter-spacing: 0.4px;
+}
+
+.bets__rating{
+    width:10.6rem;
+    margin-right:4rem;
+}
+.bets__gift{
+    width:9.2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top:0.2rem;
+
+}
+.bets__gift--img{
+    width: 19px;
+    height: 19px;  
+}
+.bets__gift--sum{
+    padding-left:0.5rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.6rem;
+
+}
+.bets__buttons{
+    width:37rem;
+    margin-left:1.5rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+}
+.bets__logo--link{
+    height: 35px;
+}
+
+.bets__rating svg{
+    width:19px;
+    height: 19px;
+}
+.active{
+    fill: #F0BB65;
+}
+.disabled{
+    fill: #C1C0CD;
+}
+/*  Experts
+______________________*/
+.experts__header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom:3.4rem;
+}
+.experts__nav--items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center
+}
+
+.experts__nav--link{
+    margin-left:1.3rem;
+    font-family: Gotham Pro;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    text-transform: uppercase;
+
+    color: #7A798A;
+}
+
+.experts__nav--link:hover{
+    color:#5a3ec4;
+}
+.experts__inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    
+    
+}
+.experts__cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+   
+
+}
+.experts__card{
+    width:48%;
+    max-width: 38rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 12px 39px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 12px 39px rgba(0, 0, 0, 0.07);
+    border-radius: 7px;
+    margin-right:1.3rem;
+    margin-bottom:1.6rem;
+
+}
+.experts__card:nth-child(2n){
+    margin-right:0;
+}
+.experts__card--content{
+   padding:1.6rem 1.3rem 1.3rem;
+}
+.experts__card--main{
+    padding-left:1rem;
+    padding-right:0.5rem;
+}
+.experts__card--title{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #5A3EC4;
+    text-transform: uppercase;
+    margin-bottom:1px;
+}
+.experts__card--game{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #000000;
+}
+.experts__card--name{
+
+    font-size: 1.4rem;
+
+    color: #C1C0CD;
+    margin-left:0.9rem;
+}
+.experts__card--info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding:1.4rem 0 1.3rem;
+    border-bottom: 1px solid #F5F5F6;
+}
+.experts__card--hero,
+.experts__card--team{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+
+}
+.experts__card--coef{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top:0.2rem;
+
+}
+.experts__card--coef-num{
+
+    font-size: 1.8rem;
+
+
+    text-align: right;
+
+    color: #403E51;
+}
+.experts__card--coef-text{
+    margin-top:-0.5rem;
+    font-size: 1.1rem;
+
+    text-transform: uppercase;
+    text-align: right;
+
+    color: #C1C0CD;
+}
+.experts__card--match{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top:0.8rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+   
+}
+.experts__card--match-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    
+    -webkit-box-align: center;
+    
+        -ms-flex-align: center;
+    
+            align-items: center;
+    margin-left:0.4rem;
+}
+.experts__card--date{
+
+    font-size: 1.1rem;
+
+    text-align: center;
+
+    color: #C1C0CD;
+}
+.experts__card--time{
+    font-size: 1.8rem;
+
+    text-align: center;
+
+    color: #403E51;
+    margin-top:-0.5rem;
+}
+.experts__card--team-name{
+
+    font-size: 1.6rem;
+
+    color: #403E51;
+
+}
+.team-left{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    
+}
+.team-right{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+   
+}
+.team-right .experts__card--team-name{
+    margin-right:0.9rem;
+}
+.team-left .experts__card--team-name{
+    margin-left:0.9rem;
+}
+.experts__banner{
+    width:100%;
+    max-width: 38.3rem;
+    max-height: 46.6rem;
+    margin:0 auto;
+  
+}
+@media screen and (max-width: 1040px){
+    .bets__info{
+        margin-right:0;
+
+        -ms-flex-wrap: wrap;
+
+            flex-wrap: wrap;    
+     
+    }
+    .bets__buttons{
+        margin-top:10px;
+    }
+    .experts__inner{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .experts__cards{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .experts__header{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .experts__nav--items{
+        margin-top:20px;
+    }
+}
+@media screen and (max-width: 690px){
+    .experts__card{
+        width:100%;
+        max-width: 100%;
+        margin: 0 0 16px 0;
+    }
+    .experts__inner{
+        padding: 10px;
+    }
+
+}
+@media screen and (max-width: 540px) {
+    .section__title{
+        text-align: center;
+    }
+      .bets__logo,
+     .bets__rating,
+      .bets__gift,
+       .bets__buttons,
+        .bets__info {
+        margin-bottom:10px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+
+    }
+    .bets__logo{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .bets__rating{
+        margin-right: 0;
+    }
+    .bets__buttons{
+        margin:0;
+    }
+    .bets__buttons a{
+        margin:10px 20px;
+    }
+    .bets__list--item:before{
+        margin:0 auto;
+    }
+}
+@media screen and (max-width: 360px){
+    .bets__info{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+    }
+    .experts__card--match{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
